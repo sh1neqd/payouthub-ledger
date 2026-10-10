@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/migrations/00004_add_account_merchant.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations/00005_create_holds.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations/00006_create_journal.sql" dialect="PostgreSQL" />
+  </component>
+</project>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/internal/adapters/postgres/accounts.go" value="9f37cddc-d989-4b3e-9931-7828db163152" />
+  </component>
+</project>
