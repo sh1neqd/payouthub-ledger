@@ -31,15 +31,15 @@ func (j JournalTransaction) Validate() error {
 
 	switch j.Kind {
 	case "fund":
-		if j.HoldID == nil {
-			return errors.New("journal transaction must have a holdID")
+		if j.HoldID != nil {
+			return errors.New("fund journal must not reference a hold")
 		}
 	case "capture":
-		if j.HoldID == nil {
-			return errors.New("journal transaction must have a holdID")
+		if j.HoldID == nil || *j.HoldID == uuid.Nil {
+			return errors.New("capture journal requires a hold")
 		}
 	default:
-		return errors.New("unsupported journal transaction kind")
+		return errors.New("unsupported journal kind")
 	}
 
 	from, to := j.Entries[0], j.Entries[1]
