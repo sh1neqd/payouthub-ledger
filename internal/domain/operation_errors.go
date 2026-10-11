@@ -15,6 +15,9 @@ var (
 	ErrInvalidPayoutID = errors.New(
 		"payout_id must be a non-zero UUID",
 	)
+	ErrInvalidHoldID = errors.New(
+		"hold_id must be a non-zero UUID",
+	)
 )
 
 type OperationRejectedError struct {
