@@ -12,6 +12,9 @@ var (
 	ErrIdempotencyConflict = errors.New(
 		"operation_id was used with different parameters",
 	)
+	ErrInvalidPayoutID = errors.New(
+		"payout_id must be a non-zero UUID",
+	)
 )
 
 type OperationRejectedError struct {

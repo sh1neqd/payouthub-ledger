@@ -15,6 +15,7 @@ type TxRepositories struct {
 	Accounts   AccountTransactionRepository
 	Operations OperationRepository
 	Journals   JournalRepository
+	Holds      HoldRepository
 }
 
 type TransactionRunner interface {

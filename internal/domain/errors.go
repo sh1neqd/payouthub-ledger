@@ -11,4 +11,5 @@ var (
 	ErrOperationNotFound   = errors.New("operation not found")
 	ErrInvalidCursor       = errors.New("after_entry_id must be non-negative")
 	ErrInvalidLimit        = errors.New("limit must be between 1 and 100")
+	ErrHoldNotFound        = errors.New("hold not found")
 )

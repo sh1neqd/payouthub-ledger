@@ -33,6 +33,7 @@ func (r *TransactionRunner) WithinTransaction(
 				Accounts:   NewAccountRepository(tx),
 				Operations: NewOperationRepository(tx),
 				Journals:   NewJournalRepository(tx),
+				Holds:      NewHoldRepository(tx),
 			}
 
 			return fn(repos)
